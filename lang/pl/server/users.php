@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'permissions' => [
+        'websocket_*' => 'Allows access to the websocket for this server.',
+        'control_console' => 'Pozwala użytkownikowi na wysyłanie danych do konsoli serwera.',
+        'control_start' => 'Pozwala użytkownikowi na uruchomienie serwera.',
+        'control_stop' => 'Pozwala użytkownikowi na zatrzymanie serwera.',
+        'control_restart' => 'Pozwala użytkownikowi na ponowne uruchomienie serwera.',
+        'control_kill' => 'Pozwala użytkownikowi na natychmiastowe zatrzymanie serwera.',
+        'user_create' => 'Pozwala użytkownikowi na tworzenie nowych kont użytkowników dla serwera.',
+        'user_read' => 'Pozwala użytkownikowi na wyświetlanie użytkowników powiązanych z tym serwerem.',
+        'user_update' => 'Pozwala użytkownikowi modyfikować innych użytkowników powiązanych z tym serwerem.',
+        'user_delete' => 'Pozwala użytkownikowi na usunięcie innych użytkowników powiązanych z tym serwerem.',
+        'file_create' => 'Zezwala użytkownikowi na tworzenie nowych plików i katalogów.',
+        'file_read' => 'Pozwala użytkownikowi na wyświetlanie plików i folderów powiązanych z tą instancją serwera, a także na wyświetlanie ich zawartości.',
+        'file_update' => 'Pozwala użytkownikowi aktualizować pliki i foldery powiązane z serwerem.',
+        'file_delete' => 'Pozwala użytkownikowi na usuwanie plików i katalogów.',
+        'file_archive' => 'Pozwala użytkownikowi na tworzenie archiwów plików i rozpakowywanie istniejących archiwów.',
+        'file_sftp' => 'Allows the user to perform the above file actions using a SFTP client.',
+        'allocation_read' => 'Allows access to the server allocation management pages.',
+        'allocation_update' => 'Allows user permission to make modifications to the server\'s allocations.',
+        'database_create' => 'Pozwala użytkownikowi na tworzenie nowej bazy danych.',
+        'database_read' => 'Allows user permission to view the server databases.',
+        'database_update' => 'Allows a user permission to make modifications to a database. If the user does not have the "View Password" permission as well they will not be able to modify the password.',
+        'database_delete' => 'Allows a user permission to delete a database instance.',
+        'database_view_password' => 'Allows a user permission to view a database password in the system.',
+        'schedule_create' => 'Allows a user to create a new schedule for the server.',
+        'schedule_read' => 'Allows a user permission to view schedules for a server.',
+        'schedule_update' => 'Allows a user permission to make modifications to an existing server schedule.',
+        'schedule_delete' => 'Allows a user to delete a schedule for the server.',
+    ],
+];
